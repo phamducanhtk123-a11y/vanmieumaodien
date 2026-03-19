@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tham Quan - Văn Miếu Mao Điền</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Văn Miếu Mao Điền</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="tour.html">Tham Quan</a></li>
+                    <li><a href="figures.html">Danh Nhân</a></li>
+                    <li><a href="quiz.html">Quiz STEM</a></li>
+                    <li><a href="audio.html">Thuyết Minh</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Hành Trình Tham Quan</h1>
+                <p>Khám phá từng khu vực của di tích Văn Miếu Mao Điền</p>
+            </div>
+        </section>
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <!-- Navigation Buttons -->
+            <div style="
+                display: flex;
+                gap: 1rem;
+                overflow-x: auto;
+                padding: 2rem 0;
+                border-bottom: 2px solid var(--gold);
+                margin-bottom: 2rem;
+            ">
+                <button class="btn btn-secondary btn-small" onclick="scrollToStep(1)">Cổng Đình</button>
+                <button class="btn btn-secondary btn-small" onclick="scrollToStep(2)">Khu Thờ Phụng</button>
+                <button class="btn btn-secondary btn-small" onclick="scrollToStep(3)">Bia Tiến Sĩ</button>
+                <button class="btn btn-secondary btn-small" onclick="scrollToStep(4)">Sân Chùa</button>
+                <button class="btn btn-secondary btn-small" onclick="scrollToStep(5)">Tòa Hiệu</button>
+            </div>
+
+            <!-- Step 1: Cổng Đình -->
+            <section id="step-1" class="tour-step active">
+                <span class="step-number">1</span>
+                <h3>Cổng Đình - Cổng Vào Linh Thiêng</h3>
+                
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <p><strong>Đây là nơi bắt đầu hành trình tham quan di tích.</strong></p>
+                        <p>Cổng Đình của Văn Miếu Mao Điền là một công trình kiến trúc tiêu biểu, thể hiện phong cách Á Đông cổ điển. Cổng được xây dựng với những chi tiết tinh xảo, sử dụng vật liệu truyền thống như gỗ quý và đá cẩm thạch.</p>
+                        <p>Phía trên cổng được khắc những chữ Hán thể hiện triết lý giáo dục. Hai bên cổng thường có những bức tượng rồng, tượng trưng cho sức mạnh và tinh thần cao cả.</p>
+                        <p><em>"Đó là nơi những sinh viên, học trò bước vào để tìm kiếm tri thức và sự hiền đức."</em></p>
+                    </div>
+                    <div>
+                        <div style="
+                            width: 100%;
+                            height: 300px;
+                            background: linear-gradient(135deg, #8B5A3C, #6B4423);
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: var(--gold);
+                            font-size: 4rem;
+                            border: 3px solid var(--gold);
+                        ">🚪</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 2: Khu Thờ Phụng -->
+            <section id="step-2" class="tour-step">
+                <span class="step-number">2</span>
+                <h3>Khu Thờ Phụng - Đền Tưởng Niệm Danh Nhân</h3>
+                
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <p><strong>Khu thờ phụng là trái tim tinh thần của di tích.</strong></p>
+                        <p>Đây là nơi thờ phụng các danh nhân giáo dục gồm Chu Văn An, Mạc Đĩnh Chi và Nguyễn Bỉnh Khiêm. Khu vực này được thiết kế trang trọng với những bàn thờ có cấu trúc đặc biệt.</p>
+                        <p>Trên các bàn thờ có những vật phẩm cổ như đèn gió, hương sơn và những cây hương cổ. Tường xung quanh được trang trí bằng những bức tranh về đời sống và công tích của các danh nhân.</p>
+                        <p>Ánh sáng nhẹ nhàng từ những cửa sổ hình tròn tạo nên không khí tĩnh tâm, phù hợp cho sự suy tư và kính trọng.</p>
+                    </div>
+                    <div>
+                        <div style="
+                            width: 100%;
+                            height: 300px;
+                            background: linear-gradient(135deg, #8B5A3C, #6B4423);
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: var(--gold);
+                            font-size: 4rem;
+                            border: 3px solid var(--gold);
+                        ">🙏</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 3: Bia Tiến Sĩ -->
+            <section id="step-3" class="tour-step">
+                <span class="step-number">3</span>
+                <h3>Bia Tiến Sĩ - Dấu Ấn Lịch Sử</h3>
+                
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <p><strong>Những bia tiến sĩ là chứng tích của lịch sử văn hiến.</strong></p>
+                        <p>Bia tiến sĩ ghi danh những nhân vật xuất sắc đã đóng góp cho nền giáo dục. Những bia này được khắc trên đá granit bền chặt, với chữ Hán lạc thư được khắc sâu.</p>
+                        <p>Mỗi bia tiến sĩ không chỉ ghi tên tuổi mà còn chứa đựng những thông tin về thành tích học vấn, công việc và những đóng góp của người đó cho xã hội.</p>
+                        <p>Khu vực bia tiến sĩ được bảo vệ cẩn thận, thể hiện sự tôn trọng đối với những tiền nhân đã đi trước và các học trò về sau có thể tìm hiểu lịch sử.</p>
+                    </div>
+                    <div>
+                        <div style="
+                            width: 100%;
+                            height: 300px;
+                            background: linear-gradient(135deg, #8B5A3C, #6B4423);
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: var(--gold);
+                            font-size: 4rem;
+                            border: 3px solid var(--gold);
+                        ">📜</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 4: Sân Chùa -->
+            <section id="step-4" class="tour-step">
+                <span class="step-number">4</span>
+                <h3>Sân Chùa - Không Gian Khai Phóng</h3>
+                
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <p><strong>Sân chùa là không gian mở rộng rãi cho các hoạt động tập thể.</strong></p>
+                        <p>Sân được lát bằng những viên gạch cổ, được sắp xếp theo hoa văn mang ý nghĩa nhân sinh quan. Xung quanh sân là những cây cổ thụ, mang lại bóng mát và tạo không khí thanh bình.</p>
+                        <p>Trên sân thường được tổ chức các hoạt động học tập tập thể, các lễ kỷ niệm và những cuộc tụ họp của các nhà khoa học, nhà giáo dục. Sân cũng là nơi sinh viên và học trò có thể ôn tập, tập luyện những kỹ năng sống.</p>
+                        <p>Thiết kế sân chùa thể hiện triết lý "cân bằng giữa học tập và thực hành", giữa suy nghĩ và hành động.</p>
+                    </div>
+                    <div>
+                        <div style="
+                            width: 100%;
+                            height: 300px;
+                            background: linear-gradient(135deg, #8B5A3C, #6B4423);
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: var(--gold);
+                            font-size: 4rem;
+                            border: 3px solid var(--gold);
+                        ">🏞️</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 5: Tòa Hiệu -->
+            <section id="step-5" class="tour-step">
+                <span class="step-number">5</span>
+                <h3>Tòa Hiệu - Nơi Công Tác Hành Chính</h3>
+                
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <p><strong>Tòa Hiệu là trung tâm hành chính và quản lý của di tích.</strong></p>
+                        <p>Tòa Hiệu được xây dựng với kiến trúc độc đáo, kết hợp giữa tính năng sử dụng và tính thẩm mỹ. Những phòng làm việc được bố trí theo hình chữ nhật, với những cửa sổ lớn cho ánh sáng tự nhiên.</p>
+                        <p>Trong Tòa Hiệu, có những thư viện lưu trữ tài liệu về lịch sử, những bộ sưu tập hiếm có về đời sống văn hóa của các thế kỷ trước. Đây cũng là nơi phục vụ du khách, cung cấp thông tin chi tiết về di tích.</p>
+                        <p>Kiến trúc Tòa Hiệu phản ánh giá trị của tổ chức, quản lý khoa học - những nguyên lý mà các danh nhân giáo dục đã xây dựng cho nền giáo dục Việt Nam.</p>
+                    </div>
+                    <div>
+                        <div style="
+                            width: 100%;
+                            height: 300px;
+                            background: linear-gradient(135deg, #8B5A3C, #6B4423);
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: var(--gold);
+                            font-size: 4rem;
+                            border: 3px solid var(--gold);
+                        ">🏢</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Summary Section -->
+            <section style="
+                background: var(--cream);
+                border: 2px solid var(--gold);
+                border-radius: 10px;
+                padding: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            ">
+                <h2>Tổng Kết Hành Trình</h2>
+                <p>Hành trình tham quan Văn Miếu Mao Điền đã mang bạn qua những không gian lịch sử sâu sắc. Từ cổng đình tuyện trang đến tòa hiệu hiện đại, mỗi nơi đều kể một câu chuyện về passion giáo dục, về những tiền nhân tài ba và hiền đức.</p>
+                <p>Hãy tiếp tục hành trình học tập của bạn bằng cách khám phá thêm về các danh nhân, tham gia quiz kiến thức hoặc nghe những lời thuyết minh chuyên gia.</p>
+                
+                <div style="
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                    margin-top: 1.5rem;
+                ">
+                    <a href="figures.html" class="btn btn-primary">Khám Phá Danh Nhân</a>
+                    <a href="quiz.html" class="btn btn-primary">Chơi Quiz</a>
+                    <a href="audio.html" class="btn btn-primary">Nghe Thuyết Minh</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Website Giáo Dục - Văn Miếu Mao Điền</p>
+            <p>Một dự án học tập về di tích lịch sử Việt Nam</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

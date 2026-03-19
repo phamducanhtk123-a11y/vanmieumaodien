@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz STEM - Văn Miếu Mao Điền</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Văn Miếu Mao Điền</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="tour.html">Tham Quan</a></li>
+                    <li><a href="figures.html">Danh Nhân</a></li>
+                    <li><a href="quiz.html">Quiz STEM</a></li>
+                    <li><a href="audio.html">Thuyết Minh</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Trò Chơi Quiz STEM</h1>
+                <p>Kiểm tra kiến thức về Văn Miếu Mao Điền và các danh nhân lịch sử</p>
+            </div>
+        </section>
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <!-- Introduction -->
+            <section style="
+                background: var(--cream);
+                border: 2px solid var(--gold);
+                border-radius: 10px;
+                padding: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+            ">
+                <h2>Cách Chơi</h2>
+                <p>Hãy trả lời các câu hỏi về Văn Miếu Mao Điền, các danh nhân giáo dục và lịch sử Việt Nam. Mỗi câu hỏi có 4 lựa chọn, bạn cần chọn đáp án đúng. Sau khi hoàn thành, bệ sẽ nhận được điểm số và phản hồi từng câu hỏi.</p>
+            </section>
+
+            <!-- Quiz Container -->
+            <div class="quiz-container">
+                <!-- Question 1 -->
+                <div class="question">
+                    <h4>❓ Câu 1: Chu Văn An sống trong thời kỳ nào?</h4>
+                    <div class="options">
+                        <div class="option" data-question="0" data-value="wrong1" onclick="selectAnswer(0, this)">
+                            <label>
+                                <input type="radio" name="q1" value="wrong1">
+                                <span>Thời Lý - Trần sơ kỳ (11-12 thế kỷ)</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="0" data-value="correct" onclick="selectAnswer(0, this)">
+                            <label>
+                                <input type="radio" name="q1" value="correct">
+                                <span>Thời Trần (1292-1370)</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="0" data-value="wrong2" onclick="selectAnswer(0, this)">
+                            <label>
+                                <input type="radio" name="q1" value="wrong2">
+                                <span>Thời Hồ (15 thế kỷ)</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="0" data-value="wrong3" onclick="selectAnswer(0, this)">
+                            <label>
+                                <input type="radio" name="q1" value="wrong3">
+                                <span>Thời Mạc - Trịnh (16 thế kỷ)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <h4>❓ Câu 2: Chu Văn An sáng lập trường đại học nào?</h4>
+                    <div class="options">
+                        <div class="option" data-question="1" data-value="wrong1" onclick="selectAnswer(1, this)">
+                            <label>
+                                <input type="radio" name="q2" value="wrong1">
+                                <span>Văn Miếu Mao Điền</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="1" data-value="correct" onclick="selectAnswer(1, this)">
+                            <label>
+                                <input type="radio" name="q2" value="correct">
+                                <span>Quốc Tử Giám</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="1" data-value="wrong2" onclick="selectAnswer(1, this)">
+                            <label>
+                                <input type="radio" name="q2" value="wrong2">
+                                <span>Thành Nhân Quốc Học</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="1" data-value="wrong3" onclick="selectAnswer(1, this)">
+                            <label>
+                                <input type="radio" name="q2" value="wrong3">
+                                <span>Hà Nội Imperial Academy</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question">
+                    <h4>❓ Câu 3: Mạc Đĩnh Chi được biết đến nhất vì điều gì?</h4>
+                    <div class="options">
+                        <div class="option" data-question="2" data-value="correct" onclick="selectAnswer(2, this)">
+                            <label>
+                                <input type="radio" name="q3" value="correct">
+                                <span>Khả năng quản lý xuất sắc và xây dựng cơ sở hạ tầng giáo dục</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="2" data-value="wrong1" onclick="selectAnswer(2, this)">
+                            <label>
+                                <input type="radio" name="q3" value="wrong1">
+                                <span>Viết sách Nho học nổi tiếng</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="2" data-value="wrong2" onclick="selectAnswer(2, this)">
+                            <label>
+                                <input type="radio" name="q3" value="wrong2">
+                                <span>Cảnh hành quân sự thành công</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="2" data-value="wrong3" onclick="selectAnswer(2, this)">
+                            <label>
+                                <input type="radio" name="q3" value="wrong3">
+                                <span>Phát hiện các tài nguyên khoáng sản</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question">
+                    <h4>❓ Câu 4: Nguyễn Bỉnh Khiêm sống vào thế kỷ nào?</h4>
+                    <div class="options">
+                        <div class="option" data-question="3" data-value="wrong1" onclick="selectAnswer(3, this)">
+                            <label>
+                                <input type="radio" name="q4" value="wrong1">
+                                <span>Thế kỷ 13</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="3" data-value="wrong2" onclick="selectAnswer(3, this)">
+                            <label>
+                                <input type="radio" name="q4" value="wrong2">
+                                <span>Thế kỷ 14</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="3" data-value="wrong3" onclick="selectAnswer(3, this)">
+                            <label>
+                                <input type="radio" name="q4" value="wrong3">
+                                <span>Thế kỷ 15</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="3" data-value="correct" onclick="selectAnswer(3, this)">
+                            <label>
+                                <input type="radio" name="q4" value="correct">
+                                <span>Thế kỷ 16 (1512-1585)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question">
+                    <h4>❓ Câu 5: Cái gì là điểm nổi bật của Nguyễn Bỉnh Khiêm?</h4>
+                    <div class="options">
+                        <div class="option" data-question="4" data-value="wrong1" onclick="selectAnswer(4, this)">
+                            <label>
+                                <input type="radio" name="q5" value="wrong1">
+                                <span>Xây dựng nhiều trường học trên cả nước</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="4" data-value="correct" onclick="selectAnswer(4, this)">
+                            <label>
+                                <input type="radio" name="q5" value="correct">
+                                <span>Cải cách tư duy giáo dục và khuyến khích suy nghĩ độc lập</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="4" data-value="wrong2" onclick="selectAnswer(4, this)">
+                            <label>
+                                <input type="radio" name="q5" value="wrong2">
+                                <span>Viết nhiều tài liệu về quân sự</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="4" data-value="wrong3" onclick="selectAnswer(4, this)">
+                            <label>
+                                <input type="radio" name="q5" value="wrong3">
+                                <span>Lên nắm quyền tối cao trong quốc gia</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question">
+                    <h4>❓ Câu 6: Văn Miếu Mao Điền có những khu vực nào?</h4>
+                    <div class="options">
+                        <div class="option" data-question="5" data-value="wrong1" onclick="selectAnswer(5, this)">
+                            <label>
+                                <input type="radio" name="q6" value="wrong1">
+                                <span>Chỉ có khu thờ phụng</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="5" data-value="correct" onclick="selectAnswer(5, this)">
+                            <label>
+                                <input type="radio" name="q6" value="correct">
+                                <span>Cổng, khu thờ phụng, bia tiến sĩ, sân chùa, tòa hiệu</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="5" data-value="wrong2" onclick="selectAnswer(5, this)">
+                            <label>
+                                <input type="radio" name="q6" value="wrong2">
+                                <span>Chỉ có sân chùa và thư viện</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="5" data-value="wrong3" onclick="selectAnswer(5, this)">
+                            <label>
+                                <input type="radio" name="q6" value="wrong3">
+                                <span>Chỉ có khu bảo tàng</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question">
+                    <h4>❓ Câu 7: Chu Văn An là người có độ tuổi bao nhiêu khi mất?</h4>
+                    <div class="options">
+                        <div class="option" data-question="6" data-value="wrong1" onclick="selectAnswer(6, this)">
+                            <label>
+                                <input type="radio" name="q7" value="wrong1">
+                                <span>60 tuổi</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="6" data-value="correct" onclick="selectAnswer(6, this)">
+                            <label>
+                                <input type="radio" name="q7" value="correct">
+                                <span>78 tuổi</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="6" data-value="wrong2" onclick="selectAnswer(6, this)">
+                            <label>
+                                <input type="radio" name="q7" value="wrong2">
+                                <span>90 tuổi</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="6" data-value="wrong3" onclick="selectAnswer(6, this)">
+                            <label>
+                                <input type="radio" name="q7" value="wrong3">
+                                <span>100 tuổi</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question">
+                    <h4>❓ Câu 8: Đặc điểm nào không phải của Nguyễn Bỉnh Khiêm?</h4>
+                    <div class="options">
+                        <div class="option" data-question="7" data-value="wrong1" onclick="selectAnswer(7, this)">
+                            <label>
+                                <input type="radio" name="q8" value="wrong1">
+                                <span>Là một nhà thơ tài ba</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="7" data-value="wrong2" onclick="selectAnswer(7, this)">
+                            <label>
+                                <input type="radio" name="q8" value="wrong2">
+                                <span>Khuyến khích suy nghĩ độc lập</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="7" data-value="correct" onclick="selectAnswer(7, this)">
+                            <label>
+                                <input type="radio" name="q8" value="correct">
+                                <span>Sáng lập và quản lý Quốc Tử Giám</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="7" data-value="wrong3" onclick="selectAnswer(7, this)">
+                            <label>
+                                <input type="radio" name="q8" value="wrong3">
+                                <span>Từ chối quyền lực để đắm mình trong giáo dục</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question">
+                    <h4>❓ Câu 9: Bia tiến sĩ có tác dụng gì?</h4>
+                    <div class="options">
+                        <div class="option" data-question="8" data-value="wrong1" onclick="selectAnswer(8, this)">
+                            <label>
+                                <input type="radio" name="q9" value="wrong1">
+                                <span>Dùng để trang trí di tích</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="8" data-value="correct" onclick="selectAnswer(8, this)">
+                            <label>
+                                <input type="radio" name="q9" value="correct">
+                                <span>Ghi danh những nhân vật tiêu biểu và thành tích của họ</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="8" data-value="wrong2" onclick="selectAnswer(8, this)">
+                            <label>
+                                <input type="radio" name="q9" value="wrong2">
+                                <span>Dùng để cấu luyện</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="8" data-value="wrong3" onclick="selectAnswer(8, this)">
+                            <label>
+                                <input type="radio" name="q9" value="wrong3">
+                                <span>Dùng để chỉ đường cho du khách</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question">
+                    <h4>❓ Câu 10: Mục tiêu chính của nền giáo dục do Chu Văn An xây dựng là gì?</h4>
+                    <div class="options">
+                        <div class="option" data-question="9" data-value="wrong1" onclick="selectAnswer(9, this)">
+                            <label>
+                                <input type="radio" name="q10" value="wrong1">
+                                <span>Chỉ dạy kiến thức sách vở</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="9" data-value="correct" onclick="selectAnswer(9, this)">
+                            <label>
+                                <input type="radio" name="q10" value="correct">
+                                <span>Giáo dục nhân cách, đạo đức và kiến thức đều quan trọng</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="9" data-value="wrong2" onclick="selectAnswer(9, this)">
+                            <label>
+                                <input type="radio" name="q10" value="wrong2">
+                                <span>Chỉ dạy cho giới quý tộc</span>
+                            </label>
+                        </div>
+                        <div class="option" data-question="9" data-value="wrong3" onclick="selectAnswer(9, this)">
+                            <label>
+                                <input type="radio" name="q10" value="wrong3">
+                                <span>Chuẩn bị học sinh cho chiến tranh</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Result -->
+            <div id="quiz-result" style="margin: 2rem 0;"></div>
+
+            <!-- Action Buttons -->
+            <div style="
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            ">
+                <button class="btn btn-primary" onclick="submitQuiz(['correct', 'correct', 'correct', 'correct', 'correct', 'correct', 'correct', 'correct', 'correct', 'correct'])">
+                    Nộp Bài Làm
+                </button>
+                <button class="btn btn-secondary" onclick="resetQuiz()">
+                    Bắt Đầu Lại
+                </button>
+                <a href="index.html" class="btn btn-secondary">
+                    Quay Lại Trang Chủ
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Website Giáo Dục - Văn Miếu Mao Điền</p>
+            <p>Một dự án học tập về di tích lịch sử Việt Nam</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Initialize quiz
+        document.addEventListener('DOMContentLoaded', function() {
+            initQuiz('quiz-container', 10);
+        });
+    </script>
+            initQuiz('quiz', 10);
+        });
+    </script>
+</body>
+</html>

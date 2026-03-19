@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Nhân - Văn Miếu Mao Điền</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Văn Miếu Mao Điền</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="tour.html">Tham Quan</a></li>
+                    <li><a href="figures.html">Danh Nhân</a></li>
+                    <li><a href="quiz.html">Quiz STEM</a></li>
+                    <li><a href="audio.html">Thuyết Minh</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Các Danh Nhân Giáo Dục</h1>
+                <p>Khám phá cuộc đời và thành tích của những tiêu biểu giáo dục Việt Nam</p>
+            </div>
+        </section>
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <section style="margin-top: 3rem; margin-bottom: 3rem;">
+                <h2>Ba Vị Danh Nhân Được Thờ Phụng</h2>
+                
+                <div class="grid">
+                    <!-- Figure 1: Chu Văn An -->
+                    <div class="figure-card">
+                        <div class="figure-image">👨‍🏫</div>
+                        <div class="figure-content">
+                            <h3 class="figure-name">Chu Văn An</h3>
+                            <p class="figure-period">1292 - 1370</p>
+                            <p><strong>Nhà giáo dục, nhà cách cách Nho học lỗi lạc</strong></p>
+                            <button class="btn btn-small btn-secondary" onclick="toggleDetails('chu-van-an')">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+
+                    <!-- Figure 2: Mạc Đĩnh Chi -->
+                    <div class="figure-card">
+                        <div class="figure-image">📚</div>
+                        <div class="figure-content">
+                            <h3 class="figure-name">Mạc Đĩnh Chi</h3>
+                            <p class="figure-period">1280 - 1350</p>
+                            <p><strong>Nhà nho học, nhà quản lý giáo dục tài ba</strong></p>
+                            <button class="btn btn-small btn-secondary" onclick="toggleDetails('mac-dinh-chi')">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+
+                    <!-- Figure 3: Nguyễn Bỉnh Khiêm -->
+                    <div class="figure-card">
+                        <div class="figure-image">🧘</div>
+                        <div class="figure-content">
+                            <h3 class="figure-name">Nguyễn Bỉnh Khiêm</h3>
+                            <p class="figure-period">1512 - 1585</p>
+                            <p><strong>Nhà tư tưởng, nhà cách mạng giáo dục</strong></p>
+                            <button class="btn btn-small btn-secondary" onclick="toggleDetails('nguyen-binh-khiem')">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+            <!-- Comparison Table -->
+            <section style="margin-bottom: 3rem;">
+                <h2>Bảng So Sánh Các Danh Nhân</h2>
+                
+                <div style="overflow-x: auto;">
+                    <table style="
+                        width: 100%;
+                        border-collapse: collapse;
+                        background: var(--cream);
+                        border: 2px solid var(--gold);
+                        border-radius: 10px;
+                        overflow: hidden;
+                    ">
+                        <thead>
+                            <tr style="background: var(--primary-brown); color: var(--cream);">
+                                <th style="padding: 1rem; text-align: left; border-right: 1px solid var(--gold);">Tiêu Chí</th>
+                                <th style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Chu Văn An</th>
+                                <th style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Mạc Đĩnh Chi</th>
+                                <th style="padding: 1rem; text-align: center;">Nguyễn Bỉnh Khiêm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--gold);">
+                                <td style="padding: 1rem; font-weight: bold; background: #f9f5ed; border-right: 1px solid var(--gold);">Thời Kỳ</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">1292-1370</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">1280-1350</td>
+                                <td style="padding: 1rem; text-align: center;">1512-1585</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--gold);">
+                                <td style="padding: 1rem; font-weight: bold; background: #f9f5ed; border-right: 1px solid var(--gold);">Vai Trò Chính</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Nhà giáo dục, sáng lập Quốc Tử Giám</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Nhà quản lý, xây dựng cơ sở hạ tầng</td>
+                                <td style="padding: 1rem; text-align: center;">Nhà tư tưởng, cải cách giáo dục</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--gold);">
+                                <td style="padding: 1rem; font-weight: bold; background: #f9f5ed; border-right: 1px solid var(--gold);">Đóng Góp Chính</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Giáo dục nhân cách, đạo đức</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Hệ thống tuyển chọn nhân tài</td>
+                                <td style="padding: 1rem; text-align: center;">Suy nghĩ độc lập, phê phán</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--gold);">
+                                <td style="padding: 1rem; font-weight: bold; background: #f9f5ed; border-right: 1px solid var(--gold);">Phong Cách</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Nghiêm túc, kỷ luật</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Thực tiễn, tổ chức</td>
+                                <td style="padding: 1rem; text-align: center;">Sáng tạo, tự do</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; font-weight: bold; background: #f9f5ed; border-right: 1px solid var(--gold);">Di Sản</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Quốc Tử Giám, giáo trình</td>
+                                <td style="padding: 1rem; text-align: center; border-right: 1px solid var(--gold);">Hạ tầng giáo dục</td>
+                                <td style="padding: 1rem; text-align: center;">Tư tưởng giáo dục hiện đại</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Chu Văn An Details -->
+            <section id="chu-van-an-details" style="display: none; margin-bottom: 3rem;">
+                <div style="
+                    background: var(--cream);
+                    border: 2px solid var(--gold);
+                    border-radius: 10px;
+                    padding: 2rem;
+                ">
+                    <h2>Chu Văn An - Nhà Giáo Dục Vĩ Đại</h2>
+                    
+                    <div class="grid grid-2" style="margin-top: 1.5rem;">
+                        <div>
+                            <h3>Cuộc Sống và Sự Nghiệp</h3>
+                            <p>Chu Văn An (1292-1370) là một trong những nhà giáo dục kiệt xuất nhất của lịch sử Việt Nam. Ông sinh ra trong một gia đình Nho học có ảnh hưởng, từ nhỏ đã được giáo dục bởi những người thầy xuất sắc.</p>
+                            <p>Ông đã từng làm Tế Tướng (tức là Thủ tướng) trong triều đại của các vua Trần, nhưng chính thành tích nổi bật nhất của ông là trong lĩnh vực giáo dục. Ông là người sáng lập và quản lý Quốc Tử Giám - trường đại học đầu tiên của Việt Nam.</p>
+                        </div>
+                        <div>
+                            <h3>Những Đóng Góp Lớn</h3>
+                            <p><strong>📖 Cải Cách Giáo Dục:</strong> Chu Văn An đã cải cách hệ thống giáo dục, tập trung vào việc giáo dục nhân cách và đạo đức, không chỉ kiến thức sách quyển.</p>
+                            <p><strong>👥 Giáo Dục Dân Chủ:</strong> Ông tin rằng giáo dục phải tiếp cận mọi tầng lớp xã hội, không chỉ dành cho giới quý tộc.</p>
+                            <p><strong>✍️ Di Sản Văn Hiến:</strong> Ông để lại rất nhiều bộ sách, giáo trình và những tư tưởng về giáo dục có ảnh hưởng đến nhiều thế hệ.</p>
+                        </div>
+                    </div>
+
+                    <div style="
+                        background: #f0ead3;
+                        border-left: 5px solid var(--gold);
+                        padding: 1.5rem;
+                        margin-top: 1.5rem;
+                        border-radius: 5px;
+                    ">
+                        <h4>💡 Sự Thú Vị Về Chu Văn An</h4>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Ông sống đến 78 tuổi, một tuổi thọ đáng kể cho thời đó</li>
+                            <li>Chu Văn An không chỉ là giáo dục gia mà còn là nhà quản lý thuế, phi tử, với những quyết định thận trọng và công bằng</li>
+                            <li>Ông từ chối một số chức vụ to lớn để tập trung vào giáo dục</li>
+                            <li>Hàng ngàn học trò đã được Chu Văn An dạy dỗ và trở thành những nhân sĩ tiêu biểu của đất nước</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mạc Đĩnh Chi Details -->
+            <section id="mac-dinh-chi-details" style="display: none; margin-bottom: 3rem;">
+                <div style="
+                    background: var(--cream);
+                    border: 2px solid var(--gold);
+                    border-radius: 10px;
+                    padding: 2rem;
+                ">
+                    <h2>Mạc Đĩnh Chi - Nhà Quản Lý Giáo Dục Tài Ba</h2>
+                    
+                    <div class="grid grid-2" style="margin-top: 1.5rem;">
+                        <div>
+                            <h3>Cuộc Sống và Sự Nghiệp</h3>
+                            <p>Mạc Đĩnh Chi (1280-1350) là một nhân vật đã để lại dấu ấn sâu sắc trong nền giáo dục Việt Nam thời Trần. Ông là một trong những cộng sự và kế thừa những ý tưởng giáo dục của Chu Văn An.</p>
+                            <p>Mạc Đĩnh Chi được biết đến với khả năng quản lý xuất sắc và tầm nhìn chiến lược. Ông đã giúp xây dựng và phát triển hệ thống giáo dục quốc gia, đặc biệt là trong việc đào tạo những nhân sĩ tài ba.</p>
+                        </div>
+                        <div>
+                            <h3>Những Đóng Góp Lớn</h3>
+                            <p><strong>🏫 Xây Dựng Cơ Sở Hạ Tầng:</strong> Mạc Đĩnh Chi đã giám sát xây dựng nhiều trường học và cơ sở giáo dục trên khắp đất nước.</p>
+                            <p><strong>📋 Hệ Thống Tuyển Chọn Nhân Tài:</strong> Ông xây dựng hệ thống thi cử công bằng, giúp tìm ra những nhân tài từ mọi tầng lớp.</p>
+                            <p><strong>🔗 Liên Kết Cộng Đồng:</strong> Ông là cầu nối giữa nhà nước và cộng đồng địa phương trong việc phát triển giáo dục.</p>
+                        </div>
+                    </div>
+
+                    <div style="
+                        background: #f0ead3;
+                        border-left: 5px solid var(--gold);
+                        padding: 1.5rem;
+                        margin-top: 1.5rem;
+                        border-radius: 5px;
+                    ">
+                        <h4>💡 Sự Thú Vị Về Mạc Đĩnh Chi</h4>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Mạc Đĩnh Chi là một người quản lý siêu nhân, có khả năng tổ chức lớn</li>
+                            <li>Ông thường xuyên du lịch khắp các tỉnh để kiểm tra chất lượng giáo dục</li>
+                            <li>Những quy định giáo dục mà ông xây dựng đã được áp dụng liên tục qua nhiều thế hệ</li>
+                            <li>Mạc Đĩnh Chi cũng là nhà văn hóa, biết nhiều thứ và tôn trọng các ý tưởng mới</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nguyễn Bỉnh Khiêm Details -->
+            <section id="nguyen-binh-khiem-details" style="display: none; margin-bottom: 3rem;">
+                <div style="
+                    background: var(--cream);
+                    border: 2px solid var(--gold);
+                    border-radius: 10px;
+                    padding: 2rem;
+                ">
+                    <h2>Nguyễn Bỉnh Khiêm - Nhà Tư Tưởng Cách Mạng</h2>
+                    
+                    <div class="grid grid-2" style="margin-top: 1.5rem;">
+                        <div>
+                            <h3>Cuộc Sống và Sự Nghiệp</h3>
+                            <p>Nguyễn Bỉnh Khiêm (1512-1585) là một nhân vật đặc biệt trong lịch sử giáo dục Việt Nam. Ông sinh sống vào thời kỳ biến động, nhưng luôn tập trung vào việc cải tiến nền giáo dục.</p>
+                            <p>Mặc dù Nguyễn Bỉnh Khiêm đã từng giữ những chức vụ quan trọng, ông nổi tiếng hơn với tư cách là một nhà tư tưởng độc lập, không sợ thách thức những kiến thức truyền thống nếu chúng không còn hợp lý.</p>
+                        </div>
+                        <div>
+                            <h3>Những Đóng Góp Lớn</h3>
+                            <p><strong>💭 Cải Cách Tư Duy:</strong> Nguyễn Bỉnh Khiêm đã thúc đẩy sự chuyển đổi từ tư duy cổ điển sang tư duy tự suy nghĩ, phê phán.</p>
+                            <p><strong>🌍 Mở Rộng Kiến Thức:</strong> Ông khuyến khích học tập các kiến thức từ Trung Quốc, Ấn Độ và các nền văn minh khác.</p>
+                            <p><strong>✊ Giáo Dục Tinh Thần Độc Lập:</strong> Ông dạy học sinh phải có độc lập tư duy, not chỉ theo sâu theo những tư tưởng cũ.</p>
+                        </div>
+                    </div>
+
+                    <div style="
+                        background: #f0ead3;
+                        border-left: 5px solid var(--gold);
+                        padding: 1.5rem;
+                        margin-top: 1.5rem;
+                        border-radius: 5px;
+                    ">
+                        <h4>💡 Sự Thú Vị Về Nguyễn Bỉnh Khiêm</h4>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Nguyễn Bỉnh Khiêm từng từ chối quyền lực để sống một cuộc sống giản dị và đắm mình trong giáo dục</li>
+                            <li>Ông là nhà thơ tài ba, những bài thơ của ông thường mang thông điệp giáo dục sâu sắc</li>
+                            <li>Ông sống sâu, những lời dạy của ông vẫn còn giá trị đến ngày nay</li>
+                            <li>Nguyễn Bỉnh Khiêm là một trong những người đầu tiên ở Việt Nam nhấn mạnh tầm quan trọng của sự tự giáo dục và self-learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparative Analysis -->
+            <section style="
+                background: linear-gradient(135deg, #f9f3e9, #f0ead3);
+                border: 2px solid var(--gold);
+                border-radius: 10px;
+                padding: 2rem;
+                margin-bottom: 3rem;
+            ">
+                <h2>So Sánh Các Danh Nhân</h2>
+                
+                <div style="overflow-x: auto; margin-top: 1.5rem;">
+                    <table style="
+                        width: 100%;
+                        border-collapse: collapse;
+                    ">
+                        <thead>
+                            <tr style="background-color: var(--primary-brown); color: var(--gold);">
+                                <th style="padding: 1rem; text-align: left; border: 1px solid var(--gold);">Tiêu Chí</th>
+                                <th style="padding: 1rem; text-align: left; border: 1px solid var(--gold);">Chu Văn An</th>
+                                <th style="padding: 1rem; text-align: left; border: 1px solid var(--gold);">Mạc Đĩnh Chi</th>
+                                <th style="padding: 1rem; text-align: left; border: 1px solid var(--gold);">Nguyễn Bỉnh Khiêm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: white; border: 1px solid var(--gold);">
+                                <td style="padding: 1rem; border: 1px solid var(--gold); font-weight: bold;">Thời Kỳ</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Triều Trần (14-15c)</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Triều Trần (13-14c)</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Triều Mạc-Trịnh (16c)</td>
+                            </tr>
+                            <tr style="background-color: var(--light-bg); border: 1px solid var(--gold);">
+                                <td style="padding: 1rem; border: 1px solid var(--gold); font-weight: bold;">Chuyên Môn</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Sáng Lập Trường Học</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Quản Lý & Xây Dựng</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Cải Cách Tư Duy</td>
+                            </tr>
+                            <tr style="background-color: white; border: 1px solid var(--gold);">
+                                <td style="padding: 1rem; border: 1px solid var(--gold); font-weight: bold;">Ảnh Hưởng</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Toàn Bộ Hệ Thống</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Cơ Sở Hạ Tầng</td>
+                                <td style="padding: 1rem; border: 1px solid var(--gold);">Tư Duy & Triết Lý</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Action Section -->
+            <section style="
+                background: var(--cream);
+                border: 2px solid var(--gold);
+                border-radius: 10px;
+                padding: 2rem;
+                text-align: center;
+                margin-bottom: 3rem;
+            ">
+                <h2>Tiếp Tục Hành Trình Học Tập</h2>
+                <p>Sau khi tìm hiểu về các danh nhân, hãy kiểm tra kiến thức của bạn với quiz hoặc nghe những lời thuyết minh chuyên gia.</p>
+                
+                <div style="
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-top: 1.5rem;
+                ">
+                    <a href="quiz.html" class="btn btn-primary">Chơi Quiz Ngay</a>
+                    <a href="audio.html" class="btn btn-primary">Nghe Thuyết Minh</a>
+                    <a href="tour.html" class="btn btn-primary">Quay Lại Tham Quan</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Website Giáo Dục - Văn Miếu Mao Điền</p>
+            <p>Một dự án học tập về di tích lịch sử Việt Nam</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        function toggleDetails(figureId) {
+            // Hide all details
+            document.getElementById('chu-van-an-details').style.display = 'none';
+            document.getElementById('mac-dinh-chi-details').style.display = 'none';
+            document.getElementById('nguyen-binh-khiem-details').style.display = 'none';
+            
+            // Show selected details
+            const selectedId = figureId + '-details';
+            const element = document.getElementById(selectedId);
+            if (element) {
+                element.style.display = 'block';
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    </script>
+</body>
+</html>
